@@ -1,5 +1,6 @@
 package kr.co.sopthomework
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -19,10 +20,20 @@ class HomeActivity : AppCompatActivity() {
         var useriD = intent.getStringExtra("userID").toString()
         userName = intent.getStringExtra("userName").toString()
 
-
-
+        moreButtonClickEvent()
 
     }
+
+    private fun moreButtonClickEvent() {
+        binding.morebtn.setOnClickListener {
+
+
+        }
+    }
+
+
+
+
     override fun onStart() {
         super.onStart()
         val functionName = object{}.javaClass.enclosingMethod.name
