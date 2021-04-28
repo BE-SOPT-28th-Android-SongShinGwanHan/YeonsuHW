@@ -26,7 +26,10 @@ class HomeActivity : AppCompatActivity() {
 
     private fun moreButtonClickEvent() {
         binding.morebtn.setOnClickListener {
-
+            val repoFragment = FollowListFragment()
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.add(R.id.user_list, repoFragment)
+            transaction.commit()
 
         }
     }
