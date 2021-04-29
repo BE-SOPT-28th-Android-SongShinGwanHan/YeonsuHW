@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="69dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginRight="146dp"
+        android:src="@drawable/img_github">
+
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_padding="173dp"
+        android:paddingLeft="20dp"
+        android:text="   깃허브 아이디"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/loginid"
+        android:layout_marginTop="4dp"
+        android:layout_width="320dp"
+        android:layout_height="46dp"
+        android:background="@drawable/eidtstyle"
+        android:hint="     아이디를 입력해주세요"
+
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:paddingLeft="30dp"
+        android:text="  비밀번호"
+
+        />
+    <EditText
+        android:id="@+id/loginpwd"
+        android:layout_width="320dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="46dp"
+        android:hint="비밀번를 입력해주세요"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/eidtstyle"
+        android:inputType="textPassword"
+        android:paddingLeft="30dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="50dp"
+            android:text="아이디/비밀번호가 없으신가요?"
+
+            />
+        <Button
+            android:id="@+id/registerbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:text="회원가입"
+            android:textColor="@color/black"
+
+
+
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Login"/>
+</LinearLayout>
